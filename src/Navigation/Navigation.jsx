@@ -6,10 +6,10 @@ import Home from '../pages/Home'
 const router = createBrowserRouter(
     createRoutesFromElements(
 
-        <Route path='/' element = {<NavFoot/>}>
+        <Route path='' element = {<NavFoot/>}>
 
-           <Route path='' element = {<Home/>}>
-            {/* <Route path=''> */}
+           <Route path='' element = {<Home/>}/>
+            
         </Route>
     )
 )

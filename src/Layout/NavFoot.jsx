@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Last from '../components/Last'
 import { Outlet } from 'react-router-dom'
-import N
 
 
 function NavFoot() {
@@ -10,7 +9,7 @@ function NavFoot() {
    <>
    <Navbar/>
    <Outlet/>
-   <NavFoot/>
+   <Last/>
    </>
   )
 }
