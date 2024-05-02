@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, createBrowserRouter ,createRoutesFromElements ,RouterProvider } from 'react-router-dom'
 import NavFoot from '../Layout/NavFoot'
 import Home from '../pages/Home'
+import AddProduct from '../Form/AddProduct'
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -9,6 +10,7 @@ const router = createBrowserRouter(
         <Route path='' element = {<NavFoot/>}>
 
            <Route path='' element = {<Home/>}/>
+           <Route path='/AddProduct' element = {<AddProduct/>}/>
             
         </Route>
     )
