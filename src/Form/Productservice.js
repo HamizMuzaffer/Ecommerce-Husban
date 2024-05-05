@@ -40,16 +40,15 @@ export const addProduct = async (data) => {
   }
 };
 
-// Delete Product Function 
 export const deleteProduct = async (id) => {
-  const docRef = doc(db, "Products", id);
-  await deleteDoc(docRef)
-   .then(() => {
+    const docRef = doc(db, "products", id);
+    await deleteDoc(docRef)
+     .then(() => {
 
-      console.log("Document successfully deleted!");
-      window.location.reload();
-    })
-   .catch((error) => {
-      console.error("Error removing document: ", error);
-    });
-  }
+        console.log("Document successfully deleted!");
+        window.location.reload();
+      })
+     .catch((error) => {
+        console.error("Error removing document: ", error);
+      });
+    }
